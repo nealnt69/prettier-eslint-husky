@@ -21,14 +21,6 @@ function HookTransitionAndDeferred() {
     });
   };
 
-  {
-    let a = "qwe";
-    console.log(a);
-  }
-
-  console.log(count);
-  console.log(deferredQuery);
-
   return (
     <div>
       <p>{Math.random()}</p>
