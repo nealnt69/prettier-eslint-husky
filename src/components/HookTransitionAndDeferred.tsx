@@ -1,9 +1,9 @@
-import React, { useTransition, useState, useDeferredValue } from "react";
+import React, {useTransition, useState, useDeferredValue} from "react";
 
-import { useGlobalContext } from "@context/useGlobalContext";
+import {useGlobalContext} from "@context/useGlobalContext";
 
 function HookTransitionAndDeferred() {
-  const { globalState, dispatch } = useGlobalContext();
+  const {globalState, dispatch} = useGlobalContext();
   const [isPending, startTransition] = useTransition();
   const [count, setCount] = useState(0);
   const [items, setItems] = useState<any[]>([]);
@@ -11,7 +11,7 @@ function HookTransitionAndDeferred() {
 
   const handleClick = () => {
     setCount((c) => c + 1);
-    dispatch({ type: "increment" });
+    dispatch({type: "increment"});
     startTransition(() => {
       console.log(count);
       const myArr = Array(50000)

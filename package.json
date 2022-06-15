@@ -23,7 +23,7 @@
     "build": "craco  build",
     "test": "craco  test",
     "eject": "craco  eject",
-    "prepare":"husky install"
+    "prettier-format": "pretty-quick --staged"
   },
   "eslintConfig": {
     "extends": [
@@ -43,5 +43,10 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.7.0",
+    "pretty-quick": "^3.1.3"
+  }
 }
